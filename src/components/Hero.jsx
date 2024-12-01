@@ -7,10 +7,10 @@ const Hero = () => {
 		<div className='bg-gradient-to-b from-black via-gray-900 to-gray-800 min-h-screen text-white'>
 			{/* Header */}
 			<div className='pt-9'>
-				<h1 className='text-3xl md:text-5xl font-bold text-center tracking-wide transition-all duration-300 hover:text-violet-600'>
+				<h1 className='text-3xl md:text-5xl font-bold text-center tracking-wide transition-all duration-300 text-violet-600'>
 					Sarveswaran
 				</h1>
-				<p className='text-center text-gray-400 text-sm mt-2'>
+				<p className='text-center text-gray-300 text-sm mt-2'>
 					Developer | IT Undergrad | Programmer
 				</p>
 			</div>
@@ -22,7 +22,7 @@ const Hero = () => {
 					{/* About Me */}
 					<div
 						id='lr1'
-						className='row-span-2 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 rounded-xl p-6 shadow-lg transition-all duration-500 ease-in-out hover:bg-gradient-to-tr hover:from-gray-700 hover:via-gray-800 hover:to-gray-900 hover:text-violet-600  '
+						className='row-span-2 bg-gradient-to-r from-violet-700 via-gray-900 to-gray-800 rounded-xl p-6 shadow-lg transition-transform duration-500 hover:scale-105'
 					>
 						<h2 className='text-2xl font-semibold'>About Me</h2>
 						<p className='text-gray-300 mt-3 text-sm'>
@@ -40,30 +40,30 @@ const Hero = () => {
 						{/* Education */}
 						<div
 							id='lr2l'
-							className='bg-gradient-to-br from-gray-800 via-violet-900 to-black rounded-xl py-6 px-6 shadow-lg transition-all duration-500 ease-in-out hover:bg-gradient-to-t hover:from-violet-800 hover:via-gray-700 hover:to-gray-900 hover:text-violet-600  '
+							className='bg-gradient-to-br from-gray-800 via-violet-700 to-gray-900 rounded-xl py-6 px-6 shadow-lg transition-transform duration-500 hover:scale-105'
 						>
 							<h3 className='text-2xl font-semibold mb-6 text-center'>
 								Education
 							</h3>
 							{/* College */}
-							<div className='mb-6 border-l-4 border-violet-600 pl-4'>
+							<div className='mb-6 border-l-4 border-violet-500 pl-4'>
 								<div className='flex justify-between items-center'>
-									<span className='text-lg font-medium text-gray-300'>
+									<span className='text-lg font-medium text-gray-200'>
 										B.Tech IT
 									</span>
-									<span className='text-gray-400 text-sm'>
+									<span className='text-gray-300 text-sm'>
 										SASTRA University
 									</span>
 								</div>
 								<p className='text-gray-400 text-xs mt-1'>2022 - 2026</p>
 							</div>
 							{/* Higher Secondary */}
-							<div className='border-l-4 border-violet-600 pl-4'>
+							<div className='border-l-4 border-violet-500 pl-4'>
 								<div className='flex justify-between items-center'>
-									<span className='text-lg font-medium text-gray-300'>
+									<span className='text-lg font-medium text-gray-200'>
 										Higher Secondary
 									</span>
-									<span className='text-gray-400 text-sm'>
+									<span className='text-gray-300 text-sm'>
 										ONGC Public School
 									</span>
 								</div>
@@ -74,7 +74,7 @@ const Hero = () => {
 						{/* Skills */}
 						<div
 							id='lr2r'
-							className='bg-gradient-to-tl from-gray-900 via-gray-800 to-gray-700 rounded-xl p-4 shadow-lg transition-all duration-500 ease-in-out hover:bg-gradient-to-br hover:from-gray-700 hover:via-black hover:to-gray-800 hover:text-violet-600'
+							className='bg-gradient-to-tl from-gray-800 via-gray-900 to-violet-700 rounded-xl p-4 shadow-lg transition-transform duration-500 hover:scale-105'
 						>
 							<h3 className='text-2xl font-medium mb-4'>
 								<center>Skills</center>
@@ -88,18 +88,7 @@ const Hero = () => {
 												key={index}
 												className='m-2 w-fit flex justify-center items-center p-2 bg-gray-800 rounded-lg shadow hover:shadow-lg transition-transform transform hover:scale-105'
 											>
-												<skill.icon className='w-8 h-8 text-violet-500' />
-											</div>
-										)
-									)}
-									{/* Duplicate for seamless scrolling */}
-									{[...frameworks, ...languages, ...tools, ...databases].map(
-										(skill, index) => (
-											<div
-												key={`duplicate-${index}`}
-												className='m-2 w-fit flex justify-center items-center p-2 bg-gray-800 rounded-lg shadow hover:shadow-lg transition-transform transform hover:scale-105'
-											>
-												<skill.icon className='w-8 h-8 text-violet-500' />
+												<skill.icon className='w-8 h-8 text-violet-600' />
 											</div>
 										)
 									)}
@@ -108,7 +97,7 @@ const Hero = () => {
 							<div className='md:mt-9 mt-3 text-center'>
 								<button
 									onClick={() => (window.location.href = '/acq')}
-									className='px-4 py-2 bg-gray-600 text-xs text-white rounded-3xl shadow-md hover:bg-violet-700 transition-all'
+									className='px-4 py-2 bg-gray-700 text-xs text-white rounded-3xl shadow-md hover:bg-gray-600 hover:scale-110 transition-all'
 								>
 									View More
 								</button>
@@ -119,7 +108,7 @@ const Hero = () => {
 					{/* Additional Info */}
 					<div
 						id='lr3'
-						className='row-span-1 bg-gradient-to-r from-gray-800 via-violet-800 to-gray-900 rounded-xl p-6 shadow-lg transition-all duration-500 ease-in-out hover:bg-gradient-to-bl hover:from-violet-900 hover:via-gray-700 hover:to-black hover:text-violet-600  '
+						className='row-span-1 bg-gradient-to-r from-gray-800 via-gray-900 to-violet-700 rounded-xl p-6 shadow-lg transition-transform duration-500 hover:scale-105'
 					>
 						<h3 className='text-xl font-medium mb-3'>Interests</h3>
 						<p className='text-gray-300 text-base'>
@@ -137,7 +126,7 @@ const Hero = () => {
 					{/* Welcome Message */}
 					<div
 						id='rr1'
-						className='row-span-3 bg-gradient-to-b from-gray-800 via-violet-900 to-black rounded-xl p-6 shadow-lg transition-all duration-500 ease-in-out hover:bg-gradient-to-t hover:from-black hover:via-gray-800 hover:to-gray-700  '
+						className='row-span-3 bg-gradient-to-b from-gray-800 via-gray-900 to-violet-700 rounded-xl p-6 shadow-lg transition-transform duration-500 hover:scale-105'
 					>
 						<h2 className='text-2xl font-semibold'>Hi All!</h2>
 						<p className='text-gray-300 mt-3 text-sm'>
@@ -148,14 +137,25 @@ const Hero = () => {
 					{/* Contact Me */}
 					<div
 						id='rr2'
-						className='row-span-2 bg-gradient-to-t from-black via-gray-800 to-gray-700 rounded-xl p-6 shadow-lg transition-all duration-500 ease-in-out hover:bg-gradient-to-br hover:from-gray-700 hover:via-black hover:to-gray-800 hover:text-violet-600  '
+						className='row-span-2 bg-gradient-to-t from-gray-900 via-violet-800 to-black rounded-xl p-8 shadow-xl transition-transform duration-500 hover:scale-105'
 					>
-						<h2 className='text-xl font-medium'>Contact Me</h2>
-						<p className='text-gray-300 mt-2 text-sm'>
-							Feel free to reach out via{' '}
-							<span className='underline'>email</span> or{' '}
-							<span className='underline'>LinkedIn</span>.
+						<h2 className='text-2xl font-bold text-center text-white mb-6'>
+							Contact Me
+						</h2>
+						<p className='text-gray-300 text-center text-sm leading-relaxed max-w-lg mx-auto mb-8'>
+							Let’s work together to create something amazing! Feel free to get
+							in touch for collaborations or networking opportunities.
 						</p>
+						<div className='flex flex-col sm:flex-row justify-center items-center gap-6'>
+							<button className='relative group flex items-center justify-center px-8 py-3 rounded-full bg-gradient-to-r from-violet-600 to-pink-600 text-white text-sm font-medium shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500'>
+								<span className='absolute inset-0 bg-gradient-to-r from-violet-700 via-pink-700 to-violet-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md rounded-full'></span>
+								<span className='relative z-10'>Email Me</span>
+							</button>
+							<button className='relative group flex items-center justify-center px-8 py-3 rounded-full bg-gradient-to-r from-violet-600 to-pink-600 text-white text-sm font-medium shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-500'>
+								<span className='absolute inset-0 bg-gradient-to-r from-violet-700 via-pink-700 to-violet-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md rounded-full'></span>
+								<span className='relative z-10'>Connect on LinkedIn</span>
+							</button>
+						</div>
 					</div>
 
 					{/* Social Media Icons */}
@@ -163,19 +163,16 @@ const Hero = () => {
 						id='rr3'
 						className='row-span-1 flex justify-evenly items-center gap-6'
 					>
-						<div className='md:w-16 md:h-16 w-12 h-12 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300 text-2xl md:text-3xl font-semibold hover:text-violet-600 shadow-md transition-all duration-500 ease-in-out hover:scale-110  '>
+						<div className='md:w-16 md:h-16 w-12 h-12 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300 text-2xl md:text-3xl font-semibold shadow-md transition-transform duration-500 ease-in-out hover:scale-110'>
 							<FaGithub />
 						</div>
-
-						<div className='md:w-16 md:h-16 w-12 h-12 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300 text-2xl  md:text-3xl font-semibold hover:text-violet-600 shadow-md transition-all duration-500 ease-in-out hover:scale-110  '>
+						<div className='md:w-16 md:h-16 w-12 h-12 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300 text-2xl md:text-3xl font-semibold shadow-md transition-transform duration-500 ease-in-out hover:scale-110'>
 							<FaLinkedin />
 						</div>
-
-						<div className='md:w-16 md:h-16 w-12 h-12 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300 text-2xl  md:text-3xl font-semibold hover:text-violet-600 shadow-md transition-all duration-500 ease-in-out hover:scale-110  '>
+						<div className='md:w-16 md:h-16 w-12 h-12 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300 text-2xl md:text-3xl font-semibold shadow-md transition-transform duration-500 ease-in-out hover:scale-110'>
 							<FaInstagram />
 						</div>
-
-						<div className='md:w-16 md:h-16 w-12 h-12 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300 text-2xl  md:text-3xl font-semibold hover:text-violet-600 shadow-md transition-all duration-500 ease-in-out hover:scale-110  '>
+						<div className='md:w-16 md:h-16 w-12 h-12 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300 text-2xl md:text-3xl font-semibold shadow-md transition-transform duration-500 ease-in-out hover:scale-110'>
 							<RiTwitterXFill />
 						</div>
 					</div>

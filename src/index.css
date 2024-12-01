@@ -79,3 +79,7 @@
 		transform: translateX(-25%);
 	}
 }
+
+body {
+	user-select: none;
+}
