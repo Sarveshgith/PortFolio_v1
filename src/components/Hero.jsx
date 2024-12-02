@@ -1,8 +1,8 @@
 import { databases, frameworks, languages, tools } from '@/lib/skills';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { RiTwitterXFill } from 'react-icons/ri';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from '../mini-comps/Navbar';
+import Footer from '../mini-comps/Footer';
 
 const Hero = () => {
 	return (

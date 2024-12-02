@@ -83,3 +83,7 @@
 body {
 	user-select: none;
 }
+
+.trans {
+	transform-origin: right;
+}
