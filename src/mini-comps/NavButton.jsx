@@ -13,10 +13,10 @@ const NavButton = () => {
 	return (
 		<div className='fixed bottom-6 right-10 z-50'>
 			{isExpanded && (
-				<div className='absolute bottom-20 left-1/2 transform -translate-x-1/2 space-y-6'>
+				<div className='absolute bottom-14 md:bottom-20 left-1/2 transform -translate-x-1/2 md:space-y-6 space-y-2'>
 					<button
 						onClick={() => isExpanded && window.location.replace('/')}
-						className='w-16 h-16 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group relative hover:w-28'
+						className='w-12 h-12 md:w-16 md:h-16 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group relative hover:w-28'
 						title='Home'
 					>
 						<span className='absolute inset-0 flex items-center justify-center text-white text-2xl group-hover:opacity-0'>
@@ -29,7 +29,7 @@ const NavButton = () => {
 
 					<button
 						onClick={() => isExpanded && window.location.replace('/proggies')}
-						className='w-16 h-16 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group relative hover:w-28'
+						className='w-12 h-12 md:w-16 md:h-16 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group relative hover:w-28'
 						title='Projects'
 					>
 						<span className='absolute inset-0 flex items-center justify-center text-white text-2xl group-hover:opacity-0'>
@@ -41,7 +41,7 @@ const NavButton = () => {
 					</button>
 					<button
 						onClick={() => isExpanded && window.location.replace('/acq')}
-						className='w-16 h-16 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group relative hover:w-28'
+						className='w-12 h-12 md:w-16 md:h-16 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group relative hover:w-28'
 						title='Skills'
 					>
 						<span className='absolute inset-0 flex items-center justify-center text-white text-2xl group-hover:opacity-0'>
@@ -53,7 +53,7 @@ const NavButton = () => {
 					</button>
 					<button
 						onClick={() => isExpanded && window.location.replace('/coffee')}
-						className='trans w-16 h-16 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group relative hover:w-28'
+						className='w-12 h-12 md:w-16 md:h-16 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group relative hover:w-28'
 						title='Contact'
 					>
 						<span className='absolute inset-0 flex items-center justify-center text-white text-2xl group-hover:opacity-0'>
@@ -68,7 +68,7 @@ const NavButton = () => {
 
 			<button
 				onClick={toggleExpand}
-				className={`relative flex items-center justify-center w-12 h-12 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group ${
+				className={`relative flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group ${
 					isExpanded ? 'scale-125' : ''
 				}`}
 				title='Toggle Navigation'

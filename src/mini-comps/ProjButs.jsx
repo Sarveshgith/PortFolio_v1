@@ -1,9 +1,8 @@
 import { IoGlobeOutline } from 'react-icons/io5';
 import { FaGithub } from 'react-icons/fa6';
-
 const ProjButs = ({ name, language, git, web }) => {
 	return (
-		<div className='relative max-w-xs mx-auto bg-gray-900 text-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg'>
+		<div className='relative max-w-xs mx-auto bg-gray-900 text-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:bg-gray-800'>
 			<div className='flex flex-col items-center'>
 				<h2 className='text-2xl font-bold text-violet-400 hover:text-violet-300 transition-colors'>
 					{name}

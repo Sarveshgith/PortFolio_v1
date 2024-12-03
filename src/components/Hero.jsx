@@ -1,7 +1,15 @@
 import { databases, frameworks, languages, tools } from '@/lib/skills';
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import {
+	FaGithub,
+	FaInstagram,
+	FaLinkedin,
+	FaNode,
+	FaDatabase,
+} from 'react-icons/fa';
 import { RiTwitterXFill } from 'react-icons/ri';
+import { IoCodeSlash } from 'react-icons/io5';
 import Navbar from '../mini-comps/Navbar';
+import AnimationLine from '@/mini-comps/TypeEffect';
 
 const Hero = () => {
 	return (
@@ -10,7 +18,11 @@ const Hero = () => {
 				{/* Header */}
 				<Navbar
 					title='Sarveswaran'
-					about='Developer | IT Undergrad | Programmer'
+					about={
+						<i>
+							`Somewhere caught in between building and maintaining the code.`
+						</i>
+					}
 				/>
 				{/* Main Section */}
 				<div className='min-h-screen grid grid-cols-1 md:grid-cols-5 md:gap-6 p-6 md:p-10'>
@@ -19,13 +31,21 @@ const Hero = () => {
 						{/* About Me */}
 						<div
 							id='lr1'
-							className='row-span-2 bg-gradient-to-r from-violet-700 via-gray-900 to-gray-800 rounded-xl p-6 shadow-lg transition-transform duration-500 hover:scale-105'
+							className='row-span-2 bg-gradient-to-r from-violet-700 via-gray-900 to-gray-800 rounded-xl p-6 shadow-lg transition-transform duration-500 hover:scale-105 flex flex-col group'
 						>
-							<h2 className='text-2xl font-semibold'>About Me</h2>
-							<p className='text-gray-300 mt-3 text-sm'>
-								I’m a passionate developer with expertise in modern web
-								technologies. I love turning ideas into reality and creating
-								meaningful user experiences.
+							<h2 className='md:text-3xl text-2xl font-semibold text-white mb-2 mt-4'>
+								Hey There! I&apos;m{' '}
+								<span className='transition-colors duration-300 group-hover:text-violet-500'>
+									Sarveswaran
+								</span>
+							</h2>
+							<AnimationLine />
+							<p className='text-gray-300 mt-4 md:text-base text-sm max-w-lg'>
+								I am an Information Technology undergraduate and a dedicated
+								developer with a passion for building scalable solutions and
+								creating impactful digital experiences. With a focus on
+								full-stack development and a commitment to continuous learning,
+								I thrive at the intersection of innovation and technology.
 							</p>
 						</div>
 
@@ -105,9 +125,9 @@ const Hero = () => {
 						{/* Additional Info */}
 						<div
 							id='lr3'
-							className='row-span-1 bg-gradient-to-r from-gray-800 via-gray-900 to-violet-700 rounded-xl p-6 shadow-lg transition-transform duration-500 hover:scale-105'
+							className='row-span-1 bg-gradient-to-r from-gray-800 via-gray-900 to-violet-700 rounded-xl p-6 shadow-lg transition-transform duration-500 hover:scale-105 text-center pt-9 md:pt-0'
 						>
-							<h3 className='text-xl font-medium mb-3'>Interests</h3>
+							<h3 className='text-xl font-medium mb-3 '>Interests</h3>
 							<p className='text-gray-300 text-base'>
 								Designing efficient backend systems, optimizing algorithms, and
 								developing interactive web applications.
@@ -120,16 +140,55 @@ const Hero = () => {
 						id='right'
 						className='col-span-2 grid grid-rows-6 grid-cols-1 gap-5 mt-5 md:mt-0'
 					>
-						{/* Welcome Message */}
+						{/* Projects */}
 						<div
 							id='rr1'
 							className='row-span-3 bg-gradient-to-b from-gray-800 via-gray-900 to-violet-700 rounded-xl p-6 shadow-lg transition-transform duration-500 hover:scale-105'
 						>
-							<h2 className='text-2xl font-semibold'>Hi All!</h2>
-							<p className='text-gray-300 mt-3 text-sm'>
-								Welcome to my portfolio. Let’s create something amazing
-								together.
+							<h2 className='text-2xl md:text-3xl font-bold text-center text-violet-300 mb-4'>
+								Discover My Creations
+							</h2>
+							<p className='text-center text-gray-400 mb-8 text-base md:text-lg'>
+								Dive into a world of innovation, from backend architectures to
+								engaging frontend designs. Explore the synergy between
+								technology and creativity.
 							</p>
+
+							{/* Animated Project Highlights */}
+							<div className='relative flex flex-wrap justify-center items-center gap-6'>
+								{/* Project Categories */}
+								<div className='flex flex-col items-center'>
+									<div className='w-16 h-16 bg-gray-900 rounded-full shadow-lg flex justify-center items-center text-violet-400 hover:scale-110 transition-transform'>
+										<FaDatabase className='w-8 h-8' />
+									</div>
+									<p className='mt-2 text-sm text-gray-300'>Databases</p>
+								</div>
+								<div className='flex flex-col items-center'>
+									<div className='w-16 h-16 bg-gray-900 rounded-full shadow-lg flex justify-center items-center text-violet-400 hover:scale-110 transition-transform'>
+										<FaNode className='w-8 h-8' />
+									</div>
+									<p className='mt-2 text-sm text-gray-300'>Backend APIs</p>
+								</div>
+								<div className='flex flex-col items-center'>
+									<div className='w-16 h-16 bg-gray-900 rounded-full shadow-lg flex justify-center items-center text-violet-400 hover:scale-110 transition-transform'>
+										<IoCodeSlash className='w-8 h-8' />
+									</div>
+									<p className='mt-2 text-sm text-gray-300'>Frontend UI</p>
+								</div>
+							</div>
+
+							{/* Call to Action */}
+							<div className='mt-12 text-center'>
+								<button
+									onClick={() => (window.location.href = '/proggies')}
+									className='relative px-6 py-3 bg-gradient-to-r from-violet-600 to-pink-600 text-white font-medium rounded-full shadow-lg overflow-hidden group'
+								>
+									<span className='absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl'></span>
+									<span className='relative z-10 transition-transform group-hover:scale-110 duration-300'>
+										Explore All Projects
+									</span>
+								</button>
+							</div>
 						</div>
 
 						{/* Contact Me */}

@@ -1,6 +1,6 @@
 const Navbar = ({ title, about }) => {
 	return (
-		<div className='pt-9'>
+		<div className='px-5 pt-9'>
 			<h1 className='text-3xl md:text-5xl font-bold text-center tracking-wide transition-all duration-300 text-violet-600'>
 				{title}
 			</h1>
