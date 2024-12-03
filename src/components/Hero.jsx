@@ -31,7 +31,7 @@ const Hero = () => {
 						{/* About Me */}
 						<div
 							id='lr1'
-							className='row-span-2 bg-gradient-to-r from-violet-700 via-gray-900 to-gray-800 rounded-xl p-6 shadow-lg transition-transform duration-500 hover:scale-105 flex flex-col group'
+							className='row-span-2 bg-gradient-to-r from-violet-700 via-gray-900 to-gray-800 rounded-xl p-6 shadow-lg transition-transform duration-500 hover:scale-105 flex flex-col group relative'
 						>
 							<h2 className='md:text-3xl text-2xl font-semibold text-white mb-2 mt-4'>
 								Hey There! I&apos;m{' '}
@@ -40,13 +40,19 @@ const Hero = () => {
 								</span>
 							</h2>
 							<AnimationLine />
-							<p className='text-gray-300 mt-4 md:text-base text-sm max-w-lg'>
+							<p className='text-gray-300 mt-4 md:text-base text-sm w-full'>
 								I am an Information Technology undergraduate and a dedicated
 								developer with a passion for building scalable solutions and
 								creating impactful digital experiences. With a focus on
 								full-stack development and a commitment to continuous learning,
 								I thrive at the intersection of innovation and technology.
 							</p>
+							<button
+								onClick={() => window.open('/resume.pdf', '_blank')}
+								className='absolute bottom-6 right-6 px-4 py-2 bg-gradient-to-r from-violet-700 via-pink-700 to-violet-700 text-white text-sm font-medium rounded-full shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300'
+							>
+								View Resume
+							</button>
 						</div>
 
 						{/* Education & Skills */}
@@ -125,7 +131,7 @@ const Hero = () => {
 						{/* Additional Info */}
 						<div
 							id='lr3'
-							className='row-span-1 bg-gradient-to-r from-gray-800 via-gray-900 to-violet-700 rounded-xl p-6 shadow-lg transition-transform duration-500 hover:scale-105 text-center pt-9 md:pt-0'
+							className='row-span-1 bg-gradient-to-r from-gray-800 via-gray-900 to-violet-700 rounded-xl p-6 shadow-lg transition-transform duration-500 hover:scale-105 text-center pt-9 md:pt-6'
 						>
 							<h3 className='text-xl font-medium mb-3 '>Interests</h3>
 							<p className='text-gray-300 text-base'>
@@ -145,10 +151,10 @@ const Hero = () => {
 							id='rr1'
 							className='row-span-3 bg-gradient-to-b from-gray-800 via-gray-900 to-violet-700 rounded-xl p-6 shadow-lg transition-transform duration-500 hover:scale-105'
 						>
-							<h2 className='text-2xl md:text-3xl font-bold text-center text-violet-300 mb-4'>
+							<h2 className='text-2xl md:text-2xl font-bold text-center text-violet-300 mb-4'>
 								Discover My Creations
 							</h2>
-							<p className='text-center text-gray-400 mb-8 text-base md:text-lg'>
+							<p className='text-center text-gray-400 mb-8 text-base md:text-sm'>
 								Dive into a world of innovation, from backend architectures to
 								engaging frontend designs. Explore the synergy between
 								technology and creativity.
@@ -178,7 +184,7 @@ const Hero = () => {
 							</div>
 
 							{/* Call to Action */}
-							<div className='mt-12 text-center'>
+							<div className='mt-8 text-center'>
 								<button
 									onClick={() => (window.location.href = '/proggies')}
 									className='relative px-6 py-3 bg-gradient-to-r from-violet-600 to-pink-600 text-white font-medium rounded-full shadow-lg overflow-hidden group'
