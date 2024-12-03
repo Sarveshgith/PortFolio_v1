@@ -2,7 +2,6 @@ import { databases, frameworks, languages, tools } from '@/lib/skills';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { RiTwitterXFill } from 'react-icons/ri';
 import Navbar from '../mini-comps/Navbar';
-import Footer from '../mini-comps/Footer';
 
 const Hero = () => {
 	return (
@@ -161,16 +160,39 @@ const Hero = () => {
 							id='rr3'
 							className='row-span-1 flex justify-evenly items-center gap-6'
 						>
-							<div className='md:w-16 md:h-16 w-14 h-14 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300  text-3xl font-semibold shadow-md transition-transform duration-500 ease-in-out hover:scale-110'>
+							<div
+								onClick={() =>
+									window.open('https://github.com/Sarveshgith', '_blank')
+								}
+								className='md:w-16 md:h-16 w-14 h-14 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300  text-3xl font-semibold shadow-md transition-transform duration-500 ease-in-out hover:scale-110'
+							>
 								<FaGithub />
 							</div>
-							<div className='md:w-16 md:h-16 w-14 h-14 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300  text-3xl font-semibold shadow-md transition-transform duration-500 ease-in-out hover:scale-110'>
+							<div
+								onClick={() =>
+									window.open(
+										'https://www.linkedin.com/in/sarveswaranbabu/',
+										'_blank'
+									)
+								}
+								className='md:w-16 md:h-16 w-14 h-14 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300  text-3xl font-semibold shadow-md transition-transform duration-500 ease-in-out hover:scale-110'
+							>
 								<FaLinkedin />
 							</div>
-							<div className='md:w-16 md:h-16 w-14 h-14 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300  text-3xl font-semibold shadow-md transition-transform duration-500 ease-in-out hover:scale-110'>
+							<div
+								onClick={() =>
+									window.open('https://www.instagram.com/sarvvesh._/', '_blank')
+								}
+								className='md:w-16 md:h-16 w-14 h-14 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300  text-3xl font-semibold shadow-md transition-transform duration-500 ease-in-out hover:scale-110'
+							>
 								<FaInstagram />
 							</div>
-							<div className='md:w-16 md:h-16 w-14 h-14 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300  text-3xl font-semibold shadow-md transition-transform duration-500 ease-in-out hover:scale-110'>
+							<div
+								onClick={() =>
+									window.open('https://x.com/SarveswaranMahi', '_blank')
+								}
+								className='md:w-16 md:h-16 w-14 h-14 bg-gradient-to-br from-gray-800 via-black to-gray-900 rounded-full flex items-center justify-center cursor-pointer text-gray-300  text-3xl font-semibold shadow-md transition-transform duration-500 ease-in-out hover:scale-110'
+							>
 								<RiTwitterXFill />
 							</div>
 						</div>

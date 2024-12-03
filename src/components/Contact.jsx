@@ -44,7 +44,7 @@ const Contact = () => {
 			<ContactButs />
 			<NavButton />
 			{/* Name Section */}
-			<div className='z-20 w-full flex items-center md:mb-8 md:pl-20 pl-28 mb-6'>
+			<div className='z-20 w-full hidden md:flex items-center md:mb-8 md:pl-20 pl-28 mb-6'>
 				<a
 					href='/'
 					className='text-4xl text-violet-500 hover:text-violet-600 transition font-body font-semibold cursor-pointer'

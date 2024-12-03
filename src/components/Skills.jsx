@@ -66,7 +66,7 @@ const SkillSection = ({ title, skills }) => (
 			<center>{title}</center>
 		</h2>
 		{/* Horizontally Aligned Skills with Increased Box Width */}
-		<div className='flex md:gap-12 gap-5 justify-start flex-wrap'>
+		<div className='flex md:gap-12 gap-5 justify-center flex-wrap'>
 			{skills.map((skill) => (
 				<div
 					key={skill.name}

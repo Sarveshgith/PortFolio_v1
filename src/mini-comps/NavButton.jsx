@@ -15,46 +15,51 @@ const NavButton = () => {
 			{isExpanded && (
 				<div className='absolute bottom-20 left-1/2 transform -translate-x-1/2 space-y-6'>
 					<button
+						onClick={() => isExpanded && window.location.replace('/')}
 						className='w-16 h-16 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group relative hover:w-28'
 						title='Home'
 					>
 						<span className='absolute inset-0 flex items-center justify-center text-white text-2xl group-hover:opacity-0'>
 							<FaHome />
 						</span>
-						<span className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300'>
+						<span className='absolute inset-0 flex items-center justify-center text-white text-xl md:text-2xl opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300'>
 							Home
 						</span>
 					</button>
+
 					<button
+						onClick={() => isExpanded && window.location.replace('/proggies')}
 						className='w-16 h-16 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group relative hover:w-28'
 						title='Projects'
 					>
 						<span className='absolute inset-0 flex items-center justify-center text-white text-2xl group-hover:opacity-0'>
 							<FaLaptopCode />
 						</span>
-						<span className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300'>
+						<span className='absolute inset-0 flex items-center justify-center text-white text-xl md:text-2xl opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300'>
 							Projects
 						</span>
 					</button>
 					<button
+						onClick={() => isExpanded && window.location.replace('/acq')}
 						className='w-16 h-16 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group relative hover:w-28'
 						title='Skills'
 					>
 						<span className='absolute inset-0 flex items-center justify-center text-white text-2xl group-hover:opacity-0'>
 							<TfiWrite />
 						</span>
-						<span className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300'>
+						<span className='absolute inset-0 flex items-center justify-center text-white text-xl md:text-2xl opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300'>
 							Skills
 						</span>
 					</button>
 					<button
-						className='trans w-16 h-16 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group relative hover:-translate-x-28w-28'
+						onClick={() => isExpanded && window.location.replace('/coffee')}
+						className='trans w-16 h-16 bg-gradient-to-tl from-indigo-600 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-600 hover:to-pink-600 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 group relative hover:w-28'
 						title='Contact'
 					>
 						<span className='absolute inset-0 flex items-center justify-center text-white text-2xl group-hover:opacity-0'>
 							<IoMail />
 						</span>
-						<span className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300'>
+						<span className='absolute inset-0 flex items-center justify-center text-white text-lg md:text-2xl opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300'>
 							Contact
 						</span>
 					</button>
